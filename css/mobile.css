@@ -1,0 +1,92 @@
+@media screen and (max-width: 500px) {
+  body {
+    overflow: auto;
+    height: 100%;
+  }
+
+  .portrait {
+    width: 100%;
+  }
+
+  .pages,
+  .right-social {
+    display: none;
+  }
+
+  .one {
+    display: grid;
+    grid-template-rows: 30% 80%;
+  }
+
+  .title {
+    justify-content: flex-start;
+    height: 10vh;
+    grid-column: 2/3;
+  }
+
+  .projects-container,
+  .contact-center {
+    height: 100%;
+    grid-column: 2/3;
+  }
+
+  .title h1 {
+    font-size: 65px;
+    line-height: 50px;
+  }
+
+  .title h2 {
+    font-size: 20px;
+  }
+
+  .title p {
+    width: 85%;
+  }
+  /*------------------------------------------*/
+
+  .page.two {
+    display: grid;
+    grid-template-columns: 7.5% 1fr 7.5%;
+  }
+
+  .proj-container {
+    grid-template-columns: 5% 1fr 5%;
+    height: 100%;
+  }
+
+  .projects-list {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .proj-image {
+    width: 90%;
+    height: 120px;
+  }
+
+  .proj-text,
+  .info {
+    display: none;
+  }
+
+  .proj-links {
+    width: 90%;
+    height: 100%;
+    padding-bottom: 15px;
+  }
+
+  .proj-links a {
+    padding: 5px;
+  }
+  /*------------------------------------------*/
+  .contact-container {
+    grid-template-columns: 5% 1fr 5%;
+    height: 100%;
+    padding-top: 50px;
+  }
+
+  form {
+    width: 95%;
+    height: 60vh;
+  }
+}
