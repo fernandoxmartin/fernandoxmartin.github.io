@@ -93,7 +93,7 @@ function init() {
 
   const tl = new TimelineMax({ paused: true, reversed: true });
 
-  tl.to(navOpen, 0.2, { y: 0 })
+  tl.to(navOpen, 0.4, { y: 0 })
     .fromTo(logo, 0.2, { color: "white" }, { color: "black" }, "-=1")
     .fromTo(hamburgerLines, 0.2, { stroke: "white" }, { stroke: "black" });
 

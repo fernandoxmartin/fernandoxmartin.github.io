@@ -218,17 +218,8 @@ nav {
 .title ul {
   list-style-type: none;
   font-family: "Cinzel";
-  font-weight: 900;
   letter-spacing: 3px;
   color: orangered;
-}
-
-.title ul li:before {
-  content: "\2B9E";
-  color: #c0c0c0;
-  display: inline-block;
-  padding-right: 10px;
-  font-size: 12px;
 }
 
 .photo {
