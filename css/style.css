@@ -8,7 +8,11 @@
 
 .portofolio {
   color: white;
-  background: linear-gradient(60deg, rgb(10, 10, 10) 50%, rgb(18, 18, 18) 50%)
+  background: linear-gradient(
+      65deg,
+      rgb(245, 245, 245) 50%,
+      rgb(226, 226, 226) 50%
+    )
     no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -24,6 +28,16 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0px;
+}
+
+.logo-icon {
+  font-family: "Cinzel";
+  font-size: 40px;
+  color: rgb(24, 24, 24);
+}
+
+.logo {
+  text-decoration: none;
 }
 
 .nav-open {
@@ -55,7 +69,7 @@ nav {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "Oswald";
+  font-family: "Poppins";
   font-size: 35px;
   letter-spacing: 2px;
   color: #000000;
@@ -120,7 +134,7 @@ nav {
   text-decoration: none;
   transform: rotate(180deg);
   text-transform: uppercase;
-  font-family: "Roboto";
+  font-family: "Poppins";
   font-size: 15px;
   letter-spacing: 2px;
   color: #5c5c5c;
@@ -134,7 +148,7 @@ nav {
 }
 
 .slide:hover {
-  color: white;
+  color: black;
   transform: rotate(205deg) scale(1.3);
 }
 
@@ -169,7 +183,7 @@ nav {
 .page {
   min-height: 85vh;
   display: grid;
-  grid-template-columns: 5% 1fr 2fr 5%;
+  grid-template-columns: 5% 1fr 5%;
 }
 
 .two,
@@ -184,14 +198,22 @@ nav {
 
 /*================================ ABOUT ME ================================*/
 
-.title {
+.about {
   height: 70vh;
-  grid-column: 3/4;
-  color: white;
+  grid-column: 2/3;
+  color: rgb(24, 24, 24);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-transform: uppercase;
+}
+
+.title {
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-transform: uppercase;
 }
 
 .title h1 {
@@ -200,8 +222,10 @@ nav {
   font-family: "Poppins";
   line-height: 130px;
   background: linear-gradient(to bottom, orange 0%, orangered 50%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: -4px -4px rgb(24, 24, 24);
 }
 
 .title h2 {
@@ -209,41 +233,40 @@ nav {
   font-family: "Cinzel";
 }
 
-.title p {
+.about p {
+  color: #5c5c5c;
   text-transform: initial;
-  font-family: "Roboto";
-  width: 48%;
+  font-family: "Poppins";
+  font-weight: 600;
+  width: 40%;
 }
 
-.title ul {
-  list-style-type: none;
-  font-family: "Cinzel";
-  letter-spacing: 3px;
-  color: orangered;
-}
-
-.photo {
-  grid-column: 2/3;
-  margin: 0 auto;
+.about-list {
+  height: 10vh;
+  width: 40%;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
-  height: 100%;
+  justify-content: space-around;
+}
+
+.about-list p {
+  text-align: center;
   width: 100%;
 }
 
-.portrait {
-  background: url("../img/emojibase.png") center center no-repeat;
-  background-size: contain;
-  width: 350px;
-  height: 600px;
-  transition: ease-in-out 0.3s;
+.about-highlight {
+  color: orangered;
 }
 
-.portrait:hover {
-  background: url("../img/emojihovered.png") center center no-repeat;
-  background-size: contain;
+.about-list ul {
+  list-style-type: none;
+  font-family: "Poppins";
+  letter-spacing: 1px;
+  color: orangered;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 /*================================ PROJECTS ================================*/
@@ -264,6 +287,7 @@ nav {
   align-items: center;
   width: 100%;
   margin: 0 auto;
+  height: 70vh;
 }
 
 .project {
@@ -278,17 +302,17 @@ nav {
 }
 
 .highlight {
-  color: white;
+  color: rgb(24, 24, 24);
 }
 
 .proj-image {
-  width: 80%;
+  width: 85%;
   height: 300px;
   object-fit: cover;
   opacity: 1;
   transition: 0.2s;
   border-radius: 10px 10px 0px 0px;
-  box-shadow: 5px 5px 10px #000000;
+  box-shadow: 0px 0px 10px #000000;
 }
 
 .proj-links {
@@ -296,21 +320,22 @@ nav {
   flex-direction: row;
   justify-content: space-around;
   transition: 0.5s;
-  width: 80%;
+  width: 85%;
 }
 
 .info {
-  background: rgb(255, 69, 0);
-  width: 80%;
+  background: linear-gradient(to bottom, rgb(255, 110, 0), rgb(255, 68, 0));
+  width: 85%;
 }
 
 .proj-text {
   transition: 0.5s;
-  color: #ffffff;
+  color: #eeeeee;
   text-align: center;
   margin: 0 auto;
   font-size: 18px;
   width: 100%;
+  font-family: "Poppins";
 }
 
 .info ul {
@@ -330,8 +355,12 @@ nav {
   font-size: 30px;
   transition: 0.5s;
   padding: 10px;
-  border: 2px solid #5c5c5c;
   width: 50%;
+  border: 2px solid #5c5c5c;
+}
+
+.proj-links a:nth-child(1) {
+  border-right: none;
 }
 
 .proj-links a:hover {
@@ -353,6 +382,7 @@ nav {
   text-align: center;
   font-family: "Roboto";
   padding-bottom: 50px;
+  color: rgb(24, 24, 24);
 }
 
 .feedback h2 {
@@ -369,7 +399,7 @@ form {
 }
 
 .label {
-  color: rgb(187, 187, 187);
+  color: rgb(24, 24, 24);
   text-align: left;
   font-family: "Roboto";
 }
@@ -379,8 +409,9 @@ form {
   height: 50px;
   border: none;
   border-bottom: #5c5c5c 2px solid;
-  color: rgb(202, 202, 202);
+  color: rgb(255, 255, 255);
   font-size: 16px;
+  font-family: "Poppins";
 }
 
 .input:focus {
@@ -392,7 +423,12 @@ form {
 }
 
 .submit {
-  background: linear-gradient(to bottom, orange 0%, orangered 50%);
+  background: linear-gradient(to bottom, rgb(255, 110, 0), rgb(255, 82, 19));
   border: none;
   height: 30px;
+  font-family: "Poppins";
+  font-weight: bolder;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
 }

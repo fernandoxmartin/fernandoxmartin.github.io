@@ -4,13 +4,12 @@
     height: 100%;
   }
 
-  nav img,
   nav svg {
     width: 35px;
   }
 
-  .portrait {
-    width: 100%;
+  .logo-icon {
+    font-size: 30px;
   }
 
   .pages,
@@ -20,7 +19,7 @@
 
   .one {
     display: grid;
-    grid-template-rows: 30% 80%;
+    grid-template-columns: 1fr;
   }
 
   .title {
@@ -37,16 +36,39 @@
 
   .title h1 {
     font-size: 65px;
-    line-height: 50px;
+    line-height: 55px;
+    text-shadow: -3px -3px rgb(24, 24, 24);
   }
 
   .title h2 {
     font-size: 20px;
   }
 
-  .title p {
-    width: 85%;
+  .about {
+    height: 80vh;
+    width: 100%;
   }
+
+  .about p {
+    width: 90%;
+  }
+
+  .about-list {
+    width: 100%;
+  }
+
+  .about-list p {
+    width: 100%;
+  }
+
+  .about-list ul {
+    margin: 1em;
+    display: block;
+    flex-direction: column;
+    columns: 2;
+    text-align: center;
+  }
+
   /*------------------------------------------*/
 
   .page.two {
@@ -63,6 +85,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     padding-top: 50px;
+    height: 100%;
   }
 
   .proj-image {
@@ -94,5 +117,10 @@
   form {
     width: 95%;
     height: 60vh;
+  }
+  /*------------------------------------------*/
+
+  .menu-nav {
+    height: 80vh;
   }
 }
